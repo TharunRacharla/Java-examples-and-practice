@@ -26,10 +26,14 @@ public class PasswordFieldExample1
    f.setSize(300,300);
    f.setLayout(null);
    f.setVisible(true);
-  b.addActionListener(e -> {
-     String data = "Username"+ text.getText();
-     data += ",Password:" + new String(value.getPassword());
-     label.setText(data);
+  b.addActionListener(new ActionListener()
+  {
+     public void actionPerfomed(ActionEvent e)
+     {
+        String data = "Username"+ text.getText();
+        data += ",Password:" + new String(value.getPassword());
+        label.setText(data);
+     }    
   });
  }
 }

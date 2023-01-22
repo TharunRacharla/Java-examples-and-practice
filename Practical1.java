@@ -7,16 +7,13 @@ class StudentDemo1
     int marks[];
     StudentDemo1()
     {
-        System.out.println("Enter details of 5 students:");
-        for(int i=1;i<=5;i++) {
-            System.out.print("Enter registration no. of student "+i+" :");
-            regNo = sc.nextInt();
-            System.out.print("Enter student "+i+" name:");
-            name = sc.next() + sc.next();
-            System.out.println("Student "+i+" name is :" + name);
-            getDisMarks();
-        }
-    }
+      System.out.print("Enter registration no."); 
+      regNo=sc.nextInt();
+     System.out.print("Enter student name:");
+    name=sc.next()+sc.next();
+    System.out.println("Student name is :"+name);
+     getDisMarks();    
+ }
   public void getDisMarks()
   {
    marks=new int[6];
